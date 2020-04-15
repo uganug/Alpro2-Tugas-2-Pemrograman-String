@@ -1,0 +1,19 @@
+//2. Buatlah program untuk membalik string tapi tidak memakai fungsi strrev()
+
+#include <iostream>
+#include <string.h>
+using namespace std;
+
+int main(){
+	char senten[100];
+	int result;
+	
+	cout<<"Input kalimat : ";
+	cin.getline(senten,100);
+	
+	result=strlen(senten);
+	cout<<"Setelah dibalik : ";
+	for(int s=result-1;s>=0;s--){
+		cout<<senten[s];
+	}
+}
