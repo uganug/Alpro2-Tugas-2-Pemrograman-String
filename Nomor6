@@ -1,0 +1,25 @@
+/*6. Buatlah program untuk mengecek sebuah kata yang termasuk palindrom. 
+     Palindrom adalah kata yang sama jika dibaca dari kiri maupun kanan. Contoh kata palindrom adalah : malam, katak,aba.*/
+
+#include <iostream>
+#include <string.h>
+using namespace std;
+
+int main(){
+	char kata1[] = "kursi";
+	char kata2[] = "macam";
+	char kata3[] = "kakak";
+	
+	cout<<"kata yang ingin dicek : "<<kata1<<endl;
+	strrev(kata1);
+	cout<<"setelah dicek poligon atau tidak : "<<kata1<<"\n\n";// jika bukan kata paligon maka akan terbaca beda
+	
+	cout<<"kata yang ingin dicek : "<<kata2<<endl;
+	strrev(kata2);
+	cout<<"setelah dicek poligon atau tidak : "<<kata2<<"\n\n";
+	
+	cout<<"kata yang ingin dicek : "<<kata3<<endl;
+	strrev(kata3);
+	cout<<"setelah dicek poligon atau tidak : "<<kata3;
+	
+}
