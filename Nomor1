@@ -1,0 +1,19 @@
+//1. Buatlah program untuk mencari panjang string tapi tidak memakai fungsi strlen()
+
+#include <iostream>
+#include <string.h>
+using namespace std;
+
+int main(){
+	int banyakata;
+	char senten[100];
+	
+	cout<<"Input kalimat : ";
+	cin.getline(senten,sizeof(senten));
+	
+	banyakata = 0;
+	for(int s=0; senten[s];s++)
+		banyakata++;
+		
+	cout<<"Banyaknya karakter : "<<cin.gcount()-1;
+}
